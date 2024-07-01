@@ -123,7 +123,9 @@ Question 6: At what time does the new user account log in?
 
 
 <p>
-<img width="419" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/a4124f84-59d1-45c4-953b-4c5613747dee">
+  To find the answer for this question we can create a new filter for 4624 (normal logo) and 4672 (special logon) event IDs. Looking through these events we can find a special logon that involves the new account, SteveE. Remember, this is a special logon, not a standard logon, because this account is in the Administrators localgroup.
 </p>
 
-<p> Searching for ‘Date’ in our text editor will show us the timestamp of the email. </p>
+<p> 
+  <img width="544" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/25e88c73-45c1-429e-bf63-24de9f67e2c3">
+</p>
