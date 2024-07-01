@@ -42,7 +42,7 @@ Question 1: At what time is the first Special Logon event?
 
 
 <p>
-Question 2: First Malicious Email: What is the sending address?
+Question 2: At what time does Jeff create another user account?
 </p>
 <br />
 
@@ -56,7 +56,7 @@ Question 2: First Malicious Email: What is the sending address?
 
 
 <p>
-Question 3 - First Malicious Email: What is the subject line?
+Question 3: What is the name of the new account?
 </p>
 <br />
 
@@ -69,7 +69,9 @@ Question 3 - First Malicious Email: What is the subject line?
 
 
   
-<p> Question 4 - First Malicious Email: Who are the recipients? </p>
+<p> 
+Question 4: What is the Windows event ID for the creation of the new user account?
+</p>
 <br />
 
 
@@ -80,14 +82,18 @@ Question 3 - First Malicious Email: What is the subject line?
 
 
 
-<p> Question 5 - First Malicious Email: What is the Reply-to address? (If not present, write "none") </p>
+<p>
+Question 5: What are the names of the three user groups that the new account is in, listed alphabetically? 
+</p>
 <br />
 
 <p> Searching for ‘reply’ or ‘reply-to’ gives us no results, so we will enter the answer as ‘none’. </p>
 
 
 
-<p> Question 6 - First Malicious Email: What is the date and time the email was sent? </p>
+<p> 
+Question 6: At what time does the new user account log in? 
+</p>
 <br />
 
 
@@ -96,43 +102,3 @@ Question 3 - First Malicious Email: What is the subject line?
 </p>
 
 <p> Searching for ‘Date’ in our text editor will show us the timestamp of the email. </p>
-
-
-
-<p>
-Question 7 - First Malicious Email: What is the sending server IP?
-</p>
-<br />
-
-
-<p>
-<img width="456" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/5beea50d-6580-4781-9055-fbdf4ff94b14"
-</p>
-
-<p> Searching for the string ‘Sender’ we can see a number of references to the same IP address. </p>
-
-
-
-<p>
-Question 8 - First Malicious Email: What is the reverse DNS hostname of the sending server IP? </p>
-<br />
-
-
-<p> <img width="773" alt="Screenshot 2024-06-18 at 10 45 52 PM" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/62dc3587-f1d9-498e-a282-2244d93dd8f3"> </p>
-
-
-<p> Searching for the sender IP 68.114.190.29 on https://whois.domaintools.com shows us a hostname, and states that the IP is owned by ‘United States Ashburn Charter Communications’. </p>
-
-
-
-<p>
-Question 9 - First Malicious Email: What is the full URL?
-</p>
-<br />
-
-
-<p>
-<img width="506" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/b706fae7-1af0-48eb-8160-0188e18f5a28">
-</p>
-
-<p>The easiest way to do this is by right-clicking the URL in the email when viewed through an email client, because email files can contain a lot of http/https links, making it time-consuming to go through them to find the right one.</p>
