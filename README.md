@@ -1,4 +1,5 @@
-<img width="573" alt="image" src="https://github.com/RMBaez/Artifact-Extraction/assets/170957530/44d93275-745c-4860-a7c9-11564b500093">
+<img width="798" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/62442a12-02e3-4b74-8a46-ac2013402aea">
+
 
 
 <h1> Event Log Analysis </h1>
