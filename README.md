@@ -68,6 +68,7 @@ In this exercise, I will be analyzing some Windows event logs to create a timeli
 <p>
 We have already recovered the new user's name in the previous question.
 </p>
+<br />
 
 
   
@@ -80,6 +81,7 @@ We have already recovered the new user's name in the previous question.
 <p>
   Based on the previous two questions, event ID 4720 is used for new user creation
 </p>
+<br />
 
 
 
