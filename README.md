@@ -28,29 +28,33 @@ In this exercise, I will be analyzing some Windows event logs to create a timeli
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-Question 1: At what time is the first Special Logon event?
+  Question 1: At what time is the first Special Logon event?
 </p>
 <br />
 
 
-<p> One approach to this question is to filter the logs based on the date and time they occurred. By default Event Viewer will show the most recent events at the top, so if we left-click on the Date and Time column once, it'll show the oldest logs first. From here we can see that the first log recorded is a 4672 Special Login </p>
+<p> 
+  One approach to this question is to filter the logs based on the date and time they occurred. By default Event Viewer will show the most recent events at the top, so if we left-click on the Date and Time column once, it'll show the oldest logs first. From here we can see that the first log recorded is a 4672 Special Login 
+</p>
 
 <p>
-<img width="545" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/05284339-4d87-431d-a2dd-1e415a108982">
+  <img width="545" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/05284339-4d87-431d-a2dd-1e415a108982">
 </p>
 
 
 
 <p>
-Question 2: At what time does Jeff create another user account?
+  Question 2: At what time does Jeff create another user account?
 </p>
 <br />
 
+<p> 
+  Following the time-ordered chain of events, we can see a ‘User Account Management’ event (4720). Within the log details we can see the person that took the action (Jeff, the Subject), and the new account created, SteveE. 
+</p>
+
 
 <p>
-<img width="434" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/b7eb990a-f811-4e68-b32c-9cdaa83541e1">
-  
-  Opening Email One in Sublime Text and searching for (CTRL+F) ‘From’ we can find the sending email address, which is contained within the <> symbols at the end of the line (everything before this is just a friendly name that can be set as anything, only the final part matters!)
+  <img width="545" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/cad48077-4ed5-4bbd-94e7-696dca3d6002">
 </p>
 
 
