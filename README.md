@@ -28,7 +28,7 @@ In this exercise, I will be analyzing some Windows event logs to create a timeli
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-Question 1: Which of the 5 emails have you identified as being malicious?
+Question 1: At what time is the first Special Logon event?
 </p>
 <br />
 
