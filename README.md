@@ -20,7 +20,7 @@ In this exercise, I will be analyzing some Windows event logs to create a timeli
 - Question 2 - At what time does Jeff create another user account?
 - Question 3 - What is the name of the new account?
 - Question 4 - What is the Windows event ID for the creation of the new user account?
-- Question 5 - What are the names of the three user groups that the new account is in, listed alphabetically? 
+- Question 5 - What are the names of the three user groups that the new account is in? 
 - Question 6 - At what time does the new user account log in?
 
 
@@ -60,38 +60,57 @@ In this exercise, I will be analyzing some Windows event logs to create a timeli
 
 
 <p>
-Question 3: What is the name of the new account?
+  Question 3: What is the name of the new account?
 </p>
 <br />
 
 
 <p>
-<img width="434" alt="image" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/3302c4f1-3a19-4374-99b7-b027b8cfde8d">
+We have already recovered the new user's name in the previous question.
 </p>
-
-<p> A few lines below, or by searching for ‘Subject’ we can find the subject line.</p>
 
 
   
 <p> 
-Question 4: What is the Windows event ID for the creation of the new user account?
+  Question 4: What is the Windows event ID for the creation of the new user account?
 </p>
 <br />
 
 
 <p>
-<img width="419" alt="Screenshot 2024-06-18 at 10 25 49 PM" src="https://github.com/RMBaez/Phishing-Response-Challenge/assets/170957530/5a384a37-1523-4e25-a83a-ea86b1a41563"> </p>
-
-<p> Looking at line 42 we can see the email is being sent to jack.tractive@abcindustries.co.uk. </p>
+  Based on the previous two questions, event ID 4720 is used for new user creation
+</p>
 
 
 
 <p>
-Question 5: What are the names of the three user groups that the new account is in, listed alphabetically? 
+  Question 5: What are the names of the three user groups that the new account is in? 
 </p>
 <br />
 
-<p> Searching for ‘reply’ or ‘reply-to’ gives us no results, so we will enter the answer as ‘none’. </p>
+<p>
+  When users are added to Windows Security Groups, 4732 event IDs are generated (Security Group Management). Looking through the log details we can see the group that the target account was added to. In the first event the account is added to the default group ‘Users’.
+</p>
+
+<p> 
+  <img width="545" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/a6945e35-810f-4b47-a95b-388c0c851611">
+</p>
+
+<p> 
+  In the second event the account is added to the ServiceAccount group.
+</p>
+
+<p>
+  <img width="545" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/f1567b1e-3bd9-466c-93c9-02bcf6c3a397">
+</p>
+
+<p>
+  And in the third event the account is added to the Administrators group.
+</p>
+
+<p>
+  <img width="544" alt="image" src="https://github.com/RMBaez/Event-Log-Analysis/assets/170957530/3693fcad-a68f-467b-9ef1-917a43ad3ef3">
+</p>
 
 
 
