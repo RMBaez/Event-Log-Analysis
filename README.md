@@ -3,36 +3,25 @@
 
 
 <h1> Event Log Analysis </h1>
-This tutorial outlines the retrival of key indicators and artifacts from phishing emails using manual methods and tools.
+In this exercise, I will be analyzing some Windows event logs to create a timeline of activity, and retrieve important information. This activity is designed to improve my understanding of Windows logs, and how to analyze them to understand a chain of events.
 <br />
 
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Thubderbird
-- Sublime 3
+- Windows Event Log
 
 
 
 <h2>Deployment and Configuration Steps</h2>
 
-- Question 1 - Email One - What is the sending address?
-- Question 2 - Email One - What is the recipient address?
-- Question 3 - Email One - What is the subject line?
-- Question 4 - Email One - What is the date and time the email was received? (Retrieve this via text editor. Format: DD MonthName YYYY XX:XX:XX)
-- Question 5 - Email One - What is the sending server IP address?
-- Question 6 - Email One - What is the hostname of this IP address? (Reverse DNS Lookup)
-- Question 7 - Email One - What is the full URL hyperlinked within this email?
-- Question 8 - Email One - What is the root domain of the URL?
-- Question 9 - Email Two - What is the sending address?
-- Question 10 - Email Two - What is the recipient address?
-- Question 11 - Email Two - What is the subject line?
-- Question 12 - Email Two - What is the date and time the email was received? (Retrieve this via text editor. Format: DD MonthName YYYY XX:XX:XX)
-- Question 13 - Email Two - What is the sending server IP address?
-- Question 14 - Email Two - What is the hostname of the sending server IP? (Reverse DNS Lookup)
-- Question 15 - Email Two - What is the full file name? (name + extension)
-- Question 16 - Email Two - What are the MD5 and SHA256 hashes of the attached file? (Format: MD5 SHA256)
+- Question 1 - At what time is the first Special Logon event?
+- Question 2 - At what time does Jeff create another user account?
+- Question 3 - What is the name of the new account?
+- Question 4 - What is the Windows event ID for the creation of the new user account?
+- Question 5 - What are the names of the three user groups that the new account is in, listed alphabetically? 
+- Question 6 - At what time does the new user account log in?
 
 
 
